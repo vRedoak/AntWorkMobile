@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MainActivitiDetail"
+             Title="Detail">
+    <ScrollView>
+        <StackLayout>
+
+            <StackLayout x:Name="Main" IsVisible="True">
+
+                <Frame BackgroundColor="#ff6629" >
+                    <StackLayout>
+                        <Image x:Name="logo" HorizontalOptions="Center"></Image>
+                        <Label x:Name="Fio" FontSize="40" Text="Иванов Иван Иванович" TextColor="White"></Label>
+                    </StackLayout>
+                </Frame>
+
+                <Button x:Name="Work" Text="Начать работу" TextColor="White" Margin="20,10" BackgroundColor="#ff6629" ></Button>
+
+                <!--Grid BackgroundColor="Transparent">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition  Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions >
+                        <RowDefinition  Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                </-->
+                <FlexLayout Direction="Row" AlignItems="Center" JustifyContent="SpaceEvenly">
+                    <Frame BorderColor="#ff6629" CornerRadius="50" WidthRequest="100">
+                        <StackLayout>
+                            <Label HorizontalOptions="Center" Text="10" FontSize="50" TextColor="#ff6629"></Label>
+                            <Label Text="Часов в работе"  HorizontalOptions="Center" TextColor="#ff6629"></Label>
+                        </StackLayout>
+                    </Frame>
+                    <Frame BorderColor="#ff6629" CornerRadius="50"  WidthRequest="100">
+                        <StackLayout>
+                            <Label Text="3,5" FontSize="50" HorizontalOptions="Center" TextColor="#ff6629"></Label>
+                            <Label Text="Рейтинг" HorizontalOptions="Center" TextColor="#ff6629"></Label>
+                        </StackLayout>
+                    </Frame>
+                    <StackLayout>
+                        <Button Text ="Открыть чат" FontSize="30" HorizontalOptions="Center" TextColor="ff6629"  Clicked="Chat_clicked"> </Button>
+                    </StackLayout>
+                    <!--Frame Margin="10,20,220,0"   BackgroundColor="Transparent" CornerRadius="50" HasShadow="True" BorderColor="#ff6629">
+                        <StackLayout >
+                            <Label Text="10"  HorizontalOptions="Center" FontSize="50" TextColor="#ff6629"></Label>
+                    <Label Text="Часов в работе" TextColor="#ff6629"></Label>
+                </StackLayout>
+            </>
+            <Frame Margin="10,20,220,0" Grid.Column="1" Grid.Row="1" BackgroundColor="Transparent" CornerRadius="50" HasShadow="True" BorderColor="#ff6629">
+                <StackLayout>
+                    <Label Text="10" HorizontalOptions="Center" FontSize="50" TextColor="#ff6629"></Label>
+                    <Label Text="Часов в работе" TextColor="#ff6629"></Label>
+                </StackLayout>
+            </Frame-->
+                </FlexLayout>
+
+            </StackLayout>
+            <StackLayout x:Name="Tasks" IsVisible="False">
+                <Label Text="Задачи" ></Label>
+            </StackLayout>
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>

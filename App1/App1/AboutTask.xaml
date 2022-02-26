@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.AboutTask" Title="О задаче">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Название" FontSize="30" TextColor="#ff6629"></Label>
+            <Label x:Name="Topik" TextColor="#ff6629" FontSize="Large" Margin="10,10"></Label>
+            <Label Text="Описание" FontSize="30" TextColor="#ff6629"></Label>
+            <Label x:Name="About" TextColor="#ff6629" FontSize="Large" Margin="10,10" Text="Здесь должен быть написан текст с описанием задачи. Он должен быть большим поэтому я добалю сюда лишнего текста." />
+            <Label Text="Время создания" FontSize="30" TextColor="#ff6629"></Label>
+            <Label x:Name="Time" TextColor="#ff6629" FontSize="Large" Margin="10,10"></Label>
+            <Label Text="Рейтинг" FontSize="30" TextColor="#ff6629"></Label>
+            <Label x:Name="Rate" TextColor="#ff6629" FontSize="Large" Margin="10,10"></Label>
+            <Button x:Name="Ready" Margin="10,20,10,10" Text="Задача выполнена" TextColor="White" BackgroundColor="#ff6629" Clicked="Ready_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

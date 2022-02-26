@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Tasks" Title="Задачи">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+          
+                <FlexLayout Direction="Row">
+                <ImageButton x:Name="task1" HorizontalOptions="Start" BackgroundColor="Transparent" Clicked="Task1_Clicked"  ></ImageButton>
+                    <Label x:Name="t1" Text="Тема" VerticalOptions="Center" HorizontalOptions="Center" FontSize="20" Margin="10,10" TextColor="#ff6629"></Label>
+                </FlexLayout>
+                <FlexLayout Direction="Row">
+                    <ImageButton x:Name="task2" HorizontalOptions="Start" BackgroundColor="Transparent" Clicked="Task2_Clicked"  ></ImageButton>
+                    <Label x:Name="t2" Text="Тема" VerticalOptions="Center" HorizontalOptions="Center" FontSize="20" Margin="10,10" TextColor="#ff6629"></Label>
+                </FlexLayout>
+                <FlexLayout Direction="Row">
+                    <ImageButton x:Name="task3" HorizontalOptions="Start" BackgroundColor="Transparent" Clicked="Task3_Clicked"  ></ImageButton>
+                    <Label x:Name="t3" Text="Тема" VerticalOptions="Center" HorizontalOptions="Center" FontSize="20" Margin="10,10" TextColor="#ff6629"></Label>
+                </FlexLayout>
+                <FlexLayout Direction="Row">
+                    <ImageButton x:Name="task4" HorizontalOptions="Start" BackgroundColor="Transparent" Clicked="Task4_Clicked" ></ImageButton>
+                    <Label x:Name="t4" Text="Тема" VerticalOptions="Center" HorizontalOptions="Center" FontSize="20" Margin="10,10" TextColor="#ff6629"></Label>
+                </FlexLayout>
+                <FlexLayout Direction="Row">
+                    <ImageButton x:Name="task5" HorizontalOptions="Start" BackgroundColor="Transparent" Clicked="Task5_Clicked" ></ImageButton>
+                    <Label x:Name="t5" Text="Тема" VerticalOptions="Center" HorizontalOptions="Center" FontSize="20" Margin="10,10" TextColor="#ff6629"></Label>
+                </FlexLayout>
+                <FlexLayout Direction="Row">
+                    <ImageButton x:Name="task6" HorizontalOptions="Start" BackgroundColor="Transparent" Clicked="Task6_Clicked" ></ImageButton>
+                    <Label x:Name="t6" Text="Тема" VerticalOptions="Center" HorizontalOptions="Center" FontSize="20" Margin="10,10" TextColor="#ff6629"></Label>
+                </FlexLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

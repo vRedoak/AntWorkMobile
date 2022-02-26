@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.EditKod">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout x:Name="Rabotat">
+            <Label Text="Для начала работы введите код"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                   FontSize="40"
+                   TextColor="#ff6629"/>
+            <Entry x:Name="Kod" Placeholder="Введите пароль" VerticalOptions="Center" HorizontalOptions="Center" TextColor="#ff6629" FontSize="30" >
+            </Entry>
+            <Button x:Name="KodVvod" Text="Ввести код" HorizontalOptions="Center" FontSize="30" BackgroundColor="#ff6629" TextColor="White" Clicked="KodVvod_Clicke" ></Button>
+            </StackLayout>
+            <StackLayout x:Name="NeRabotat">
+                <Label Text="Вы хотите завершить рабочий день?"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                   FontSize="40"
+                   TextColor="#ff6629"/>
+                <Button x:Name="Zavershenie" Text="Да, завершить работу" HorizontalOptions="Center" FontSize="30" BackgroundColor="#ff6629" TextColor="White" Clicked="Zavershit_Clicke" ></Button>
+
+            </StackLayout>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

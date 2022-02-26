@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.UserPage">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <Label Text="Здраствуйте. Для регистрации заполните свои данные."></Label>
+            <Label Text="ID" />
+            <Entry Text="{Binding ID}" />
+            <Label Text="Фамилия, имя и отчество" />
+            <Entry Text="{Binding FIO}" />
+            <Label Text="Придумайте логин" />
+            <Entry Text="{Binding Login}" />
+            <Label Text="Придумайте пароль" />
+            <Entry Text="{Binding Pass}" />
+            <Label Text="Введите вашу должность" />
+            <Entry Text="{Binding function}" />
+            <Label Text="Введите логин организации (узнайте у администратора)" />
+            <Entry Text="{Binding organization}" />
+            <Label Text="Введите номер мобильного телефона (Формат: 375*********)" />
+            <Entry Text="{Binding tel}" />
+            <!--Label Text="reiting" />
+            <Entry Text="{Binding reiting}" />
+            <Label Text="autoriti" />
+            <Entry Text="{Binding autoriti}" /-->
+            <!--StackLayout Orientation="Horizontal">
+                <Button Text="Сохранить" Clicked="SaveUser" />
+                <Button Text="Удалить" Clicked="DeleteUser" />
+                <Button Text="Отмена" Clicked="Cancel" />
+            </-->
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

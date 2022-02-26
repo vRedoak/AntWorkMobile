@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Glavnaya"
+              >
+    <ScrollView >
+        <StackLayout>
+
+            <StackLayout x:Name="Main" IsVisible="True">
+
+                <Frame BackgroundColor="#ff6629" >
+                    <StackLayout>
+                        <Image x:Name="logo" HorizontalOptions="Center"></Image>
+                        <Label
+              x:Name="FIO"
+                           FontSize="40" 
+              TextColor="White"/>
+                    </StackLayout>
+                </Frame>
+
+                <Button x:Name="Work" Text="Начать работу" TextColor="White" Margin="20,10" BackgroundColor="#ff6629" Clicked="Work_Clicked" ></Button>
+
+                <Button x:Name="NoWork" Text="Закончить работу" IsVisible="False" TextColor="White" Margin="20,10" BackgroundColor="#ff6629" Clicked="Work_Clicked" ></Button>
+               
+                <!--Grid BackgroundColor="Transparent">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition  Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions >
+                        <RowDefinition  Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                </-->
+                <FlexLayout Direction="Row" AlignItems="Center" JustifyContent="SpaceEvenly">
+                    <Frame BorderColor="#ff6629" CornerRadius="50" WidthRequest="100">
+                        <StackLayout>
+                            <Label HorizontalOptions="Center" x:Name="chas" Text="0" FontSize="50" TextColor="#ff6629"></Label>
+                            <Label Text="Часов в работе"  HorizontalOptions="Center" TextColor="#ff6629"></Label>
+                        </StackLayout>
+                    </Frame>
+                    <Frame BorderColor="#ff6629" CornerRadius="50"  WidthRequest="100">
+                        <StackLayout>
+                            <Label Text="0" x:Name="reit" FontSize="50" HorizontalOptions="Center" TextColor="#ff6629"></Label>
+                            <Label Text="Рейтинг" HorizontalOptions="Center" TextColor="#ff6629"></Label>
+                        </StackLayout>
+                    </Frame>
+                    <!--Frame Margin="10,20,220,0"   BackgroundColor="Transparent" CornerRadius="50" HasShadow="True" BorderColor="#ff6629">
+                        <StackLayout >
+                            <Label Text="10"  HorizontalOptions="Center" FontSize="50" TextColor="#ff6629"></Label>
+                    <Label Text="Часов в работе" TextColor="#ff6629"></Label>
+                </StackLayout>
+            </>
+            <Frame Margin="10,20,220,0" Grid.Column="1" Grid.Row="1" BackgroundColor="Transparent" CornerRadius="50" HasShadow="True" BorderColor="#ff6629">
+                <StackLayout>
+                    <Label Text="10" HorizontalOptions="Center" FontSize="50" TextColor="#ff6629"></Label>
+                    <Label Text="Часов в работе" TextColor="#ff6629"></Label>
+                </StackLayout>
+            </Frame-->
+                </FlexLayout>
+                <Label x:Name="Nadpis" Text="Удачного рабочего дня!" Margin="30,5" HorizontalOptions="Center" VerticalOptions="End" TextColor="#ff6629" FontSize="20"></Label>
+            </StackLayout>
+           
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>

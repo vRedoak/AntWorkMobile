@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Grafik">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="График"
+                   FontSize="40"
+                HorizontalOptions="CenterAndExpand" TextColor="#ff6629"/>
+            <FlexLayout Direction="Row">
+                <Label Text="Режим работы:" FontSize="25" HorizontalOptions="Start" Margin="20,0" TextColor="#ff6629"></Label>
+                <Label Text="" x:Name="type" FontSize="25" TextColor="#ff6629" ></Label>
+            </FlexLayout>
+            <FlexLayout>
+                <Label Text="Время работы:" FontSize="25" HorizontalOptions="Start" Margin="20,0" TextColor="#ff6629"></Label>
+                <Label Text="с" FontSize="25" HorizontalOptions="Start" Margin="20,0" TextColor="#ff6629"></Label>
+                <Label Text="" x:Name="timestart" FontSize="25" TextColor="#ff6629" ></Label>
+                <Label Text="по" FontSize="25" HorizontalOptions="Start" Margin="20,0" TextColor="#ff6629"></Label>
+                <Label Text="" x:Name="timefinish" FontSize="25" TextColor="#ff6629" ></Label>
+            </FlexLayout>
+            <FlexLayout>
+            <Label Text="Дата первого рабочего дня:" FontSize="15" HorizontalOptions="Start" Margin="20,0" TextColor="#ff6629">
+                </Label>
+                <Label x:Name="date" FontSize="20" HorizontalOptions="Start" Margin="20,0" TextColor="#ff6629"></Label>
+
+            </FlexLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

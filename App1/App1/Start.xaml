@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.Start">
+
+    <ScrollView>
+        <AbsoluteLayout>
+      
+        <Image x:Name="BgImage" 
+               Aspect="AspectFill"
+               AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+               AbsoluteLayout.LayoutFlags="All"/>
+        <StackLayout
+            AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+            AbsoluteLayout.LayoutFlags="All">
+            <Image x:Name="logo" Margin="0,40"></Image>
+            <Frame OutlineColor="Accent" 
+                   WidthRequest="300" 
+                   BackgroundColor="#ee804f"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   BorderColor="#ee804f"
+                   Margin="10,50,10,0">
+                <StackLayout>
+                    <Entry x:Name="loginvvod" Placeholder="Введите логин" BackgroundColor="#ee804f" />
+                </StackLayout>
+            </Frame>
+            <Frame OutlineColor="Accent" 
+                   WidthRequest="300" 
+                   BackgroundColor="#ee804f"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   BorderColor="#ee804f"
+                  Margin="10,20,10,40">
+                <StackLayout>
+                    <Entry x:Name="Pass" BackgroundColor="#ee804f" IsPassword="True" FontFamily="TimesNewRoman" Placeholder="Введите пароль"  />
+                </StackLayout>
+            </Frame>
+            <Button x:Name="Vhod" Text="Войти" Font="Veranda"  FontAttributes="Bold" Clicked="Vhod_Clicked" BackgroundColor="#fe804f"  Margin="  40,30,40,5"></Button>
+              
+        </StackLayout>
+        
+    </AbsoluteLayout>
+    </ScrollView>
+</ContentPage>

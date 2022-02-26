@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Menu">
+    
+  
+        <ScrollView>
+
+            <AbsoluteLayout>
+            <Image x:Name="BgImage" 
+               Aspect="AspectFill"
+               AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+               AbsoluteLayout.LayoutFlags="All"/>
+            <StackLayout>
+            <Entry x:Name="FIO" Placeholder="Введите фамилию, имя и отчество"></Entry>
+            <Entry x:Name="Login" Placeholder="Введите логин"></Entry>
+            <Entry x:Name="Pass" Placeholder="Введите логин"></Entry>
+            <Entry x:Name="sex" Placeholder="Выберите ваш пол"></Entry>
+            <Editor x:Name="function" Placeholder="function"></Editor>
+            <Editor x:Name="organization" Placeholder="organization"></Editor>
+            <Editor x:Name="tel" Placeholder="tel"></Editor>
+            <Editor x:Name="reting" Placeholder="reting"></Editor>
+            <Editor x:Name="autoriti" Placeholder="autoriti"></Editor>
+            <Button Text="save" x:Name="save" Clicked="Save_Clicked"></Button>
+            </StackLayout>
+        </AbsoluteLayout>
+        </ScrollView>
+        
+  
+    
+</ContentPage>

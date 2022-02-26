@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MainActivitiMaster"
+             Title="Master">
+  <StackLayout>
+        <ListView x:Name="MenuItemsListView"
+              SeparatorVisibility="None"
+              HasUnevenRows="true"
+              ItemsSource="{Binding MenuItems}">
+            <ListView.Header>
+                <Grid BackgroundColor="#ff6629">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition  Width="10"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="10"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition  Height="30"/>
+                        <RowDefinition Height="80"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="10"/>
+                    </Grid.RowDefinitions>
+                    
+                    <Label
+              Grid.Column="1"
+              Grid.Row="1"
+              Text="AppName"
+              Style="{DynamicResource SubtitleStyle}"/>
+                </Grid>
+            </ListView.Header>
+            <!--ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout Padding="15,10" HorizontalOptions="FillAndExpand">
+              <Label VerticalOptions="FillAndExpand" 
+                    VerticalTextAlignment="Center" 
+                    Text="{Binding Title}" 
+                    FontSize="24"/>
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </-->
+        </ListView>
+        <TableView Intent="Settings" VerticalOptions="Start">
+            <TableRoot  >
+                <TableSection>
+                    <ViewCell Height="0" >
+                        <StackLayout Orientation="Horizontal"  HorizontalOptions="Center">
+                            <Button Text="Главная" x:Name="Main" BackgroundColor="#ffc3ab"  VerticalOptions="FillAndExpand" FontSize="Large"  BorderColor="Transparent" TextColor="#ff6629" Clicked="main_clicked"></Button>
+                        </StackLayout>
+                        </ViewCell>
+                    <ViewCell >
+                        <StackLayout Orientation="Horizontal"  HorizontalOptions="Center">
+                            <Button Text="График" x:Name="grafik" VerticalOptions="StartAndExpand" FontSize="Large"  BackgroundColor="Transparent" BorderColor="Transparent" TextColor="#ff6629" Clicked="grafik_clicked"></Button>
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout >
+                            <Button Text="Задача" x:Name="tasks" VerticalOptions="StartAndExpand" FontSize="Large"  BackgroundColor="Transparent" BorderColor="Transparent" Clicked="tasks_clicked" TextColor="#ff6629"></Button>
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout >
+                            <Button Text="Задачи" x:Name="task" VerticalOptions="StartAndExpand" FontSize="Large"  BackgroundColor="Transparent" BorderColor="Transparent" TextColor="#ff6629"></Button>
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout >
+                            <Button Text="Чат" x:Name="chat"  VerticalOptions="StartAndExpand" FontSize="Large"  BackgroundColor="Transparent" BorderColor="Transparent" TextColor="#ff6629"  Clicked="chat_clicked"></Button>
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout >
+                            <Button Text="Выйти из аккаунта"  VerticalOptions="StartAndExpand" FontSize="Large"  BackgroundColor="Transparent" BorderColor="Transparent" TextColor="#ff6629"  Clicked="exit_clicked"></Button>
+                        </StackLayout>
+                    </ViewCell>
+                   
+                </TableSection>
+            </TableRoot>
+        </TableView>
+  </StackLayout>
+</ContentPage>

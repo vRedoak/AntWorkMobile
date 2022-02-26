@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MainActiviti"
+             xmlns:pages="clr-namespace:App1"
+                  Title="Главная страница">
+  <MasterDetailPage.Master>
+        <ContentPage Title="Главная страница">
+            <StackLayout>
+
+                <Frame BackgroundColor="#ff6629" >
+                    <StackLayout>
+                        <Label
+              x:Name="FIO"
+                            FontSize="30"
+              TextColor="White"/>
+                    </StackLayout>
+                </Frame>
+               
+               
+                <TableView Intent="Settings" VerticalOptions="Start">
+            <TableRoot  >
+                <TableSection>
+                    <ViewCell Height="0" >
+                        <StackLayout Orientation="Horizontal"  HorizontalOptions="Center">
+                            <Button Text="Главная" x:Name="Main" BackgroundColor="#ffc3ab"  VerticalOptions="FillAndExpand" FontSize="Large"  BorderColor="Transparent" TextColor="#ff6629" Clicked="main_clicked"></Button>
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell >
+                        <StackLayout Orientation="Horizontal"  HorizontalOptions="Center">
+                            <Button Text="График" x:Name="grafik" VerticalOptions="StartAndExpand" FontSize="Large"  BackgroundColor="Transparent" BorderColor="Transparent" TextColor="#ff6629" Clicked="grafik_clicked"></Button>
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout >
+                            <Button Text="Задачи" x:Name="tasks" VerticalOptions="StartAndExpand" FontSize="Large"  BackgroundColor="Transparent" BorderColor="Transparent" Clicked="tasks_clicked" TextColor="#ff6629"></Button>
+                        </StackLayout>
+                    </ViewCell>
+                            <ViewCell>
+                                <StackLayout >
+                                    <Button Text="Мой аккаунт" x:Name="akk" VerticalOptions="StartAndExpand" FontSize="Large"  BackgroundColor="Transparent" BorderColor="Transparent" Clicked="akk_clicked" TextColor="#ff6629"></Button>
+                                </StackLayout>
+                            </ViewCell>
+                            <ViewCell>
+                        <StackLayout >
+                            <Button Text="Выйти из аккаунта"  VerticalOptions="StartAndExpand" FontSize="Large"  BackgroundColor="Transparent" BorderColor="Transparent" TextColor="#ff6629"  Clicked="exit_clicked"></Button>
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+        </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+  <MasterDetailPage.Detail>
+    <NavigationPage>
+      <x:Arguments>
+        <pages:Glavnaya />
+      </x:Arguments>
+    </NavigationPage>
+  </MasterDetailPage.Detail>
+</MasterDetailPage>

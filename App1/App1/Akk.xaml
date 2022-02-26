@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Akk" Title="Мой аккаунт">
+    <ContentPage.Content>
+        <StackLayout>
+        <FlexLayout Direction="Row">
+            <Image x:Name="My" Margin="10" ></Image>
+            <Label x:Name="FIO" TextColor="#ff6629" FontSize="30" Margin="10"></Label>
+        </FlexLayout>
+            <FlexLayout>
+                <Label Text="Логин:" TextColor="#ff6629" FontSize="25" Margin="10"></Label>
+                <Label x:Name="login" TextColor="#ff6629" FontSize="25" Margin="10"></Label>
+            </FlexLayout>
+            <FlexLayout>
+                <Label Text="Пароль:" TextColor="#ff6629" FontSize="25" Margin="10"></Label>
+                <Label x:Name="Pass" TextColor="#ff6629" FontSize="25" Margin="10"></Label>
+            </FlexLayout>
+        <FlexLayout>
+                <Label Text="Должность:" TextColor="#ff6629" FontSize="25" Margin="10"></Label>
+                <Label x:Name="dolzhnost" TextColor="#ff6629" FontSize="25" Margin="10"></Label>
+            </FlexLayout>
+            <FlexLayout>
+                <Label Text="Телефон:" TextColor="#ff6629" FontSize="25" Margin="10"></Label>
+                <Label x:Name="tel" TextColor="#ff6629" FontSize="25" Margin="10"></Label>
+            </FlexLayout>
+            <FlexLayout>
+                <Label Text="Рейтинг:" TextColor="#ff6629" FontSize="25" Margin="10"></Label>
+                <Label x:Name="reit" TextColor="#ff6629" FontSize="25" Margin="10"></Label>
+            </FlexLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

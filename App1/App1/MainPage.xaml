@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             x:Class="App1.MainPage" BackgroundImage="App1.shapka.png" >
+
+    <ScrollView>
+    <AbsoluteLayout>
+
+        <Image x:Name="BgImage" 
+               Aspect="AspectFill"
+               AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+               AbsoluteLayout.LayoutFlags="All"/>
+
+        <StackLayout
+            AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+            AbsoluteLayout.LayoutFlags="All">
+
+            <!--Frame OutlineColor="Accent" 
+                   WidthRequest="300" 
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand">
+                <StackLayout>
+                    <Entry Placeholder="Введите логин" />
+                </StackLayout>
+            </>
+            <Frame OutlineColor="Accent" 
+                   WidthRequest="300" 
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand">
+                <StackLayout>
+                    <Entry Placeholder="Введите пароль" />
+                </StackLayout>
+            </Frame-->
+            <ListView x:Name="userList" ItemsSource="{Binding}" ItemSelected="OnItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Name}" FontSize="Medium"/>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="Добавить"
+            x:Name="AddButton"
+             Clicked = "AddButton_clicked"/>
+        </StackLayout>
+
+    </AbsoluteLayout>
+    </ScrollView>
+</ContentPage>
